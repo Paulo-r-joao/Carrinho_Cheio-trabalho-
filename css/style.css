@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(224, 224, 224, 0.507);
+}
+
+/* Página Login */
+body.pagina-login {
+    background-image: url('../img/fundo.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+.pagina-login .container {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    margin-top: 50px;
+}
+
+/* Containers gerais */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    color:rgb(0, 77, 97);
+}
+
+div.card-body{
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+div.text-white{
+    background: rgb(0, 77, 97);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+div.card{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+table.table{
+    border-color: rgb(255, 255, 255);
+}
+
+thead.table{
+    border-color: rgb(255, 255, 255);
+}
+
+.table th{
+    background-color: rgb(0, 77, 97);
+    border-color: rgb(255, 255, 255);
+    color: white;
+}
+
+.table td {
+    background-color: rgba(0, 78, 97, 0.151);
+    color: rgb(0, 77, 97)
+}
+
+/* Estilo base dos botões */
+.page-link {
+    background-color: rgb(0, 77, 97); /* roxo de fundo */
+    color: white;
+    border: none;
+    margin: 0 3px;
+    padding: 8px 14px;
+    transition: 0.3s;
+}
+  
+/* Hover (mouse em cima) */
+.page-link:hover {
+    background-color: rgb(0, 61, 77);
+    color: #fff;
+}
+  
+/* Botão ativo (página atual) */
+.page-item.active .page-link {
+    background-color: rgba(0, 78, 97, 0.151);
+    color: rgb(0, 77, 97);
+    font-weight: bold;
+}
+  
+/* Botão desabilitado */
+.page-item.disabled .page-link {
+    background-color: rgba(0, 78, 97, 0.151);
+    color: rgb(0, 77, 97);
+    cursor: not-allowed;
+}
+  
+/* Clique (pressionado) */
+.page-link:active {
+    background-color: rgb(0, 52, 65);
+    transform: scale(0.97);
+}
+  
+#filtro{
+    background-color: rgb(224, 224, 224, 0.507);
+    color: rgb(0, 77, 97);
+}
+
+#filtro::placeholder{
+    color: rgb(0, 77, 97);
+}
+
+#preview img {
+    max-width: 80px;
+}
+
+#contanier {
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+/* Tipografia e formulários */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: rgb(0, 77, 97)
+}
+
+input[type="text"], 
+input[type="tel"], 
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color:rgb(0, 77, 97);
+    background-color: rgba(224, 224, 224, 0.507);
+}
+
+select{
+    color:rgb(0, 77, 97);
+}
+
+input::placeholder{
+    color:rgb(0, 77, 97);
+}
+
+input:hover{
+    border-color: rgb(0, 77, 97);
+}
+
+#formVendedor input[type="text"],
+#formVendedor input[type="tel"],
+#formVendedor input[type="email"],
+#formCadastro input[type="text"],
+#formCadastro input[type="tel"],
+#formCadastro input[type="email"] {
+    width: 457px;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+/* Checkbox */
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    position: relative;
+    left: 8px;
+}
+.checkbox input {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: rgb(0, 77, 97);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background: rgb(0, 61, 77);
+}
+
+.btn-close:hover{
+    background: rgba(14, 128, 156, 0.774);
+}
+
+/* Mensagens de erro/sucesso */
+.message {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    margin-top: 10px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    margin-top: 10px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.btn-sm{
+    border-radius: 0px;
+}
+/* Estilização de cabeçalho de tabela */
+tr {
+    cursor: pointer;
+}
+
+/* Cores customizadas */
+.bg- {
+    background-color: #5d8060 !important;
+}
+
+/* Mensagens flutuantes */
+.alert-mensagem {
+    animation: slideIn 0.3s ease, fadeOut 0.5s ease 2.5s forwards;
+    min-width: 300px;
+    
+}
+@keyframes slideIn {
+    from { transform: translateY(-100%) translateX(-50%); opacity: 0; }
+    to   { transform: translateY(0) translateX(-50%);  opacity: 1; }
+}
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateY(-100%) translateX(-50%);}
+    to   {transform: translateY(0) translateX(-50%); opacity: 0; visibility: hidden; }
+}
+
+#confirmation-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 300px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    border: 1px solid #dee2e6;
+    z-index: 2000;
+    display: none;
+    color: rgb(0, 77, 97);
+    background-color: rgb(224, 224, 224);
+}
+#confirmation-dialog p {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+#confirmation-dialog .teste{
+    background-color: black;
+}
+#confirmation-dialog .d-flex {
+    justify-content: center;
+    border-radius: 10px;
+    display: flex;
+    gap:0.4rem;
+    
+}
+body.teste{background-color: #155724;}
+
+.escuro{ position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* preto com transparência */
+    z-index: 1000;
+    display: none;
+}
+.navbar{
+    z-index: 500; /* Menor que o .escuro (1000) */
+}
