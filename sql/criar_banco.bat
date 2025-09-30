@@ -1,1 +1,0 @@
-C:\xampp\mysql\bin\mysql.exe -u root < C:\xampp\htdocs\Carrinho_Cheio-trabalho-\sql\all-scripts.sql
